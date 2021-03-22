@@ -1,4 +1,4 @@
-* {
+body{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -11,6 +11,8 @@
     margin-inline-end: 0;
     scroll-margin-inline-end: 0;
 }
+
+script{opacity: 0;}
 
 title{
     display: none;
@@ -35,18 +37,22 @@ a:hover{
     width: 25%;
 }
 
+main{
+    width: 100%;
+    height: 800px;
+}
 
 /* NAVBAR */
 .nav{
     float: right;
     position: relative;
     top: -80px;
-    right: 120px;
+    right: 100px;
     }
        
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 30px;
     top: -30px;
     right: 40px;
@@ -60,7 +66,7 @@ a:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #4d4d4d;
+    background-color: #0b032b;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
@@ -76,7 +82,7 @@ a:hover{
 }
 
 .dropdown-content a:hover{
-    color: rgb(255, 0, 73);
+    color: rgb(255, 115, 0);
 }
 
 .toggle{
@@ -104,25 +110,194 @@ input.toggle {
 .social{
     float: right;
     position: relative;
-    top: 12vh;
+    top: 31em;
+    right: 12vw;
 
 }
 
 .social i{
     color: #ffffff;
-    padding: 2em;
+    margin: 2em;
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s eases;
+    cursor: pointer;
 }
+
+.social i:hover{
+    color: rgb(255, 115, 0);
+}
+
 
 /* SOCIAL END */
 
 /* HEADLINE START */
 h1.headline{
+    width: 80%;
     color: #ffffff;
-    font-size: 80px;
-    padding: 50px;
+    font-size: 40px;
+    padding: 100px;
     position: relative;
-    top: 20vh;
-    text-shadow: 2px 2px rgb(194, 194, 194);
+    top: 19vh;
+    left: 90px;
 }
+
+
+h2.hash1{
+    color: #c2c2c2;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    float: left;
+    position: absolute;
+    top: 350px;
+}
+
+h2.hash2{
+    color: #c2c2c2;
+    font-size: 15px;
+    transform: rotate(-270deg);
+    float: right;
+    position: absolute;
+    top: 450px;
+    right: -10px;
+}
+
+.headline-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 50px;
+    border-radius: 0 50px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.headline-btn:hover{
+
+    border-radius: 50px;
+
+}
+
+a.headline-btn{
+    font-size: 16px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+}
+
 /* HEADLINE END */
+
+/* SERVICES START */
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-container{
+position: relative;
+width: 50%;
+height: 400px;
+background-color: rgba(0,0,0,0.3);
+padding: 80px;
+float: right;
+top: 50px;
+}
+
+.news-container p{
+    padding: 20px 0 40px 0;
+}
+
+.news-btn{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 0 50px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.news-btn:hover{
+    border-radius: 50px;
+}
+
+a.news-btn{
+    text-decoration: none;
+    color: #000000;
+}
+
+a.news-btn:hover{
+font-weight: bolder;
+}
+
+.services-container{
+    width: 35%;
+    margin: 50px;
+}
+.service-item-one, .service-item-two{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding-top: 5px;
+}
+
+.service-item-one{
+    background-image: url(img/services-moto.jpg);
+}
+
+.service-item-two{
+    background-image: url(img/services-serv.jpg);
+}
+
+.icon{
+color: #ffffff;
+margin-left: 250px;
+padding: 0 40px;
+}
+
+.icon-two{
+    color: #ffffff;
+    margin-left: 50px;
+    padding: 0 180px 0 40px;
+}
+
+p.icon, p.icon-two{
+    font-size: 14px;
+}
+
+.service-btn{
+    margin-top: 40px;
+}
+
+.service-btn, .service-btn-two{
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 0 50px;
+    position: absolute;
+    left: 340px;
+    height: 30px;
+}
+
+a.service-btn, a.service-btn-two{
+    color: #000000;
+    text-decoration: none;
+}
+
+a.service-btn:hover, a.service-btn-two:hover{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* SERVICES END */
+
+
 
